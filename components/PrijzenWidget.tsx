@@ -1,8 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { metaalPrijzen } from '@/lib/prices';
-import { TrendingUp, TrendingDown, Minus, Info } from 'lucide-react';
+import { TrendingUp, TrendingDown, Minus, Info, ShieldCheck, ArrowRight } from 'lucide-react';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -35,7 +36,7 @@ export default function PrijzenWidget() {
     labels: ['Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za', 'Zo'],
     datasets: [
       {
-        label: `Prijs ${selectedMetal.naam} (€/kg)`,
+        label: `Trend ${selectedMetal.naam}`,
         data: selectedMetal.historisch,
         borderColor: selectedMetal.kleur,
         backgroundColor: `${selectedMetal.kleur}33`, // 20% opacity
@@ -64,7 +65,7 @@ export default function PrijzenWidget() {
         displayColors: false,
         callbacks: {
           label: function(context: any) {
-            return `€ ${context.parsed.y.toFixed(2)} / kg`;
+            return `Trend: ${context.parsed.y > context.dataset.data[0] ? 'Stijgend' : 'Zakkend'}`;
           }
         }
       },
@@ -72,7 +73,7 @@ export default function PrijzenWidget() {
     scales: {
       y: {
         grid: { color: 'rgba(0,0,0,0.05)' },
-        ticks: { color: '#475569', callback: (value: any) => `€${value.toFixed(2)}` },
+        ticks: { color: '#475569', display: false },
       },
       x: {
         grid: { display: false },
@@ -94,7 +95,7 @@ export default function PrijzenWidget() {
             Actuele Dagprijzen
             <span className="ml-3 px-2 py-1 bg-rjmk-blue/10 text-rjmk-blue text-xs rounded-md font-sans tracking-normal uppercase font-bold">Live LME</span>
           </h3>
-          <p className="text-sm text-slate-600 mt-1">Prijzen per kg, gebaseerd op de London Metal Exchange.</p>
+          <p className="text-sm text-slate-600 mt-1">Marktconforme inkoopprijzen, direct gekoppeld aan de LME koers.</p>
         </div>
         
         {/* Toggle */}
@@ -121,23 +122,21 @@ export default function PrijzenWidget() {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b border-slate-200 text-slate-500 text-sm uppercase tracking-wider font-medium">
-                  <th className="pb-4 pl-4">Materiaal</th>
-                  <th className="pb-4 text-right">Prijs / kg</th>
-                  <th className="pb-4 text-center pr-4">Trend</th>
+                  <th className="pb-4 pl-4 text-left">Materiaal</th>
+                  <th className="pb-4 text-right pr-4">Markttrend</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
                 {metaalPrijzen.map((item, idx) => (
                   <tr key={idx} className="hover:bg-slate-50 transition-colors group cursor-pointer" onClick={() => { setSelectedMetal(item); setView('chart'); }}>
-                    <td className="py-4 pl-4 font-medium text-rjmk-dark flex items-center">
-                      <div className="w-2 h-2 rounded-full mr-3" style={{ backgroundColor: item.kleur }}></div>
-                      {item.naam}
-                    </td>
-                    <td className="py-4 text-right font-mono text-rjmk-blue font-bold">
-                      € {item.prijs.toFixed(2)}
+                    <td className="py-4 pl-4 font-medium text-rjmk-dark">
+                      <Link href={`/producten/${item.id}`} className="px-1 flex items-center hover:text-rjmk-blue transition-colors group-hover:translate-x-1 duration-300">
+                        <div className="w-2 h-2 rounded-full mr-3 shrink-0" style={{ backgroundColor: item.kleur }}></div>
+                        {item.naam}
+                      </Link>
                     </td>
                     <td className="py-4 pr-4">
-                      <div className="flex justify-center">
+                      <div className="flex justify-end pr-2">
                         {item.trend === 'up' && <TrendingUp className="w-5 h-5 text-badge-green" />}
                         {item.trend === 'down' && <TrendingDown className="w-5 h-5 text-red-500" />}
                         {item.trend === 'stable' && <Minus className="w-5 h-5 text-slate-400" />}
@@ -173,10 +172,9 @@ export default function PrijzenWidget() {
             </div>
             
             <div className="flex justify-between items-center pt-4 border-t border-slate-200">
-              <div className="text-sm text-slate-600 flex items-center">
-                <Info className="w-4 h-4 mr-2" />
-                Huidige prijs: <span className="text-rjmk-dark font-mono font-bold ml-2">€ {selectedMetal.prijs.toFixed(2)}</span>
-              </div>
+              <Link href="/dagprijzen" className="text-rjmk-blue text-sm font-medium flex items-center hover:text-rjmk-accent transition-colors">
+                Bekijk trend <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
               <button onClick={() => setView('table')} className="text-sm text-rjmk-blue font-medium hover:text-rjmk-accent transition-colors">
                 &larr; Terug naar tabel
               </button>
@@ -187,7 +185,7 @@ export default function PrijzenWidget() {
       
       {/* Footer Note */}
       <div className="bg-slate-50 p-4 text-xs text-slate-500 text-center border-t border-slate-200">
-        Prijzen zijn indicatief en kunnen gedurende de dag fluctueren. Neem contact op voor exacte prijzen bij grote volumes.
+        Marktconforme inkoopprijzen op basis van LME-koersen. Neem contact op voor exacte prijzen bij grote volumes.
       </div>
     </div>
   );

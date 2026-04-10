@@ -3,23 +3,26 @@ import Link from 'next/link';
 import { Euro, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Metalen Inkoop Venlo | Beste Dagprijzen Koper, Aluminium, RVS | RJMK BV',
-  description: 'RJMK BV koopt alle soorten ferro en non-ferro metalen in tegen de scherpste dagprijzen. Directe uitbetaling en eerlijke weging in Venlo.',
+  title: 'Metalen Inkoop Venlo | Beste Dagprijzen Koper, Aluminium, RVS | RJMK',
+  description: 'Betrouwbare inkoop van koper, aluminium, messing, RVS, lood, zink en meer in Venlo. RJMK biedt de scherpste dagprijzen en een snelle afwikkeling.',
 };
 
 export default function MetalenInkoopPage() {
   return (
     <>
       {/* Header */}
-      <section className="pt-32 pb-16 bg-rjmk-blue relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/metal-scrap/1920/1080')] opacity-10 mix-blend-overlay object-cover"></div>
+      <section className="pt-44 pb-16 bg-rjmk-blue relative overflow-hidden">
+        <div className="absolute inset-0 bg-rjmk-blue/10"></div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-3xl">
           <Euro className="w-16 h-16 text-yellow-400 mx-auto mb-6" />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 uppercase tracking-wide">
             Metalen <span className="text-yellow-400">Inkoop</span>
           </h1>
+          <p className="text-xl text-blue-100/90 leading-relaxed font-medium mb-6">
+            Betrouwbare inzameling en recycling van metaalafval voor bedrijven.
+          </p>
           <p className="text-xl text-blue-100 leading-relaxed">
-            Inkoop van alle soorten ferro en non-ferro metalen tegen de beste, LME-gekoppelde dagprijzen. Eerlijke weging en directe uitbetaling.
+            Inkoop van alle soorten ferro en non-ferro metalen tegen eerlijke, LME-gekoppelde markttrends. Wij staan voor transparante weging en een snelle, vakkundige afwikkeling.
           </p>
         </div>
       </section>
@@ -33,10 +36,10 @@ export default function MetalenInkoopPage() {
               <div className="glass-card p-8 rounded-xl">
                 <h2 className="text-2xl font-display font-bold text-rjmk-dark mb-4 uppercase">Uw Metalen, Onze Expertise</h2>
                 <p className="mb-4">
-                  Bij RJMK BV bent u aan het juiste adres voor de inkoop van vrijwel alle soorten metalen. Wij zijn gespecialiseerd in zowel ferro als non-ferro metalen en bieden u altijd een eerlijke, transparante prijs gebaseerd op de actuele koersen van de London Metal Exchange (LME).
+                  Bij RJMK bent u aan het juiste adres voor de inkoop van vrijwel alle soorten metalen. Wij zijn gespecialiseerd in zowel ferro als non-ferro metalen en bieden u altijd een eerlijke, transparante prijs gebaseerd op de actuele koersen van de London Metal Exchange (LME).
                 </p>
                 <p className="mb-4">
-                  Of u nu een particulier bent met een kleine hoeveelheid koper, of een bedrijf met wekelijks tonnen aan aluminium of RVS afval; wij verwerken het efficiënt en milieuvriendelijk. Onze gecertificeerde weegbruggen zorgen voor een exacte weging, zodat u precies krijgt waar u recht op heeft.
+                  Of u nu een klein bedrijf bent met een kleine hoeveelheid metaalafval, of een groot industrieel bedrijf met wekelijks tonnen aan aluminium of RVS; wij verwerken het efficiënt en milieuvriendelijk. Onze betrouwbare weegbruggen zorgen voor een exacte weging, zodat u precies krijgt waar u recht op heeft.
                 </p>
                 
                 <h3 className="text-xl font-display font-bold text-rjmk-dark mt-8 mb-4 uppercase">Wat kopen wij in?</h3>
@@ -68,6 +71,7 @@ export default function MetalenInkoopPage() {
             <div className="lg:w-1/3 space-y-8">
               <div className="glass-card p-8 rounded-xl bg-yellow-50 border-yellow-200">
                 <h3 className="text-xl font-display font-bold text-rjmk-dark mb-4 uppercase">Grote Partijen?</h3>
+                <span className="text-slate-600 font-medium block mb-4">Betrouwbaar & Milieubewust</span>
                 <p className="text-slate-600 mb-6">
                   Heeft u regelmatig grote hoeveelheden metaalafval of een eenmalig groot project? Wij maken graag een prijsafspraak op maat.
                 </p>

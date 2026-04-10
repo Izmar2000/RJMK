@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, MapPin, ShieldCheck, ChevronRight } from 'lucide-react';
 import { locaties } from '@/lib/locaties';
 
@@ -15,16 +16,14 @@ export default function Footer() {
           {/* Brand & Info */}
           <div className="space-y-6">
             <Link href="/" className="inline-block">
-              <div className="text-3xl font-display font-bold text-white tracking-wider">
-                RJMK <span className="text-rjmk-accent">BV</span>
-              </div>
+              <Image src="/logo-rjmk.png" alt="RJMK" width={120} height={60} className="h-12 w-auto object-contain brightness-0 invert" />
             </Link>
             <p className="text-blue-100 text-sm leading-relaxed">
               R. Janssen Metalen & Kabels is uw betrouwbare partner voor de inkoop van ferro en non-ferro metalen, kabelverwerking en gratis container plaatsing in Venlo en omstreken.
             </p>
             <div className="flex items-center text-badge-green font-medium text-sm">
               <ShieldCheck className="w-5 h-5 mr-2" />
-              MRF Gecertificeerd
+              Erkend & Betrouwbaar
             </div>
           </div>
 
@@ -54,6 +53,11 @@ export default function Footer() {
               <li>
                 <Link href="/diensten/oud-ijzer-ophalen" className="flex items-center hover:text-rjmk-accent transition-colors">
                   <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> Oud IJzer Ophalen
+                </Link>
+              </li>
+              <li>
+                <Link href="/particulieren" className="flex items-center hover:text-rjmk-accent transition-colors">
+                  <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> Particulieren
                 </Link>
               </li>
               <li>
@@ -101,7 +105,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs text-blue-200">
           <div>
-            &copy; {currentYear} RJMK BV. Alle rechten voorbehouden. KVK: 86030924 | BTW: NL860309241B01
+            &copy; {currentYear} RJMK. Alle rechten voorbehouden. KVK: 86030924 | BTW: NL860309241B01
           </div>
           <div className="flex space-x-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacybeleid</Link>

@@ -25,8 +25,8 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Oud IJzer Ophalen Venlo | RJMK BV — Metalen & Kabels Inkoop',
-  description: 'RJMK BV haalt oud ijzer, schroot en alle metalen op in Venlo en omgeving. Gratis container plaatsing. Scherpe dagprijzen. Bel: 06-513 520 95.',
+  title: 'Oud IJzer Ophalen Venlo | RJMK — Metalen & Kabels Inkoop',
+  description: 'RJMK haalt oud ijzer, schroot en alle metalen op in Venlo en omgeving. Gratis container plaatsing. Scherpe dagprijzen. Bel: 06-513 520 95.',
 };
 
 export default function RootLayout({
@@ -37,7 +37,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "RJMK BV",
+    "name": "RJMK",
     "description": "Inkoop ferro en non-ferro metalen, kabelverwerking en gratis container plaatsing in Venlo en regio.",
     "url": "https://www.rjmk.nl",
     "telephone": "06-513 520 95",

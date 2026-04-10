@@ -42,8 +42,8 @@ export default function ContactPage() {
   return (
     <>
       {/* Header */}
-      <section className="pt-32 pb-16 bg-rjmk-blue relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://picsum.photos/seed/contact-metal/1920/1080')] opacity-10 mix-blend-overlay object-cover"></div>
+      <section className="pt-44 pb-16 bg-rjmk-blue relative overflow-hidden">
+        <div className="absolute inset-0 bg-rjmk-blue/10"></div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 uppercase tracking-wide">
             Neem <span className="text-rjmk-accent">Contact</span> Op
@@ -108,7 +108,7 @@ export default function ContactPage() {
                   style={{ border: 0 }} 
                   allowFullScreen 
                   loading="lazy"
-                  title="Google Maps Locatie RJMK BV"
+                  title="Google Maps Locatie RJMK"
                 ></iframe>
               </div>
             </div>
