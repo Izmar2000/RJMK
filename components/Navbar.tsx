@@ -109,9 +109,9 @@ export default function Navbar() {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden lg:block">
-            <a href="tel:0651352095" className="inline-flex items-center rounded-md bg-[#009FE3] text-white font-medium py-2 px-5 text-sm hover:bg-[#007bbf] transition-colors shadow-sm">
-              <Phone className="w-4 h-4 mr-2" /> 06-513 520 95
+          <div className="hidden lg:block shrink-0">
+            <a href="tel:0651352095" className="inline-flex items-center rounded-md bg-[#009FE3] text-white font-bold py-1.5 px-4 text-xs hover:bg-[#007bbf] transition-colors shadow-sm whitespace-nowrap tracking-wide uppercase">
+              <Phone className="w-3.5 h-3.5 mr-2" /> Bel Nu
             </a>
           </div>
 
