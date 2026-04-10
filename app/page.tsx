@@ -33,7 +33,7 @@ export default function Home() {
             
             <h1 className="text-5xl md:text-6xl lg:text-8xl font-display font-bold text-white leading-[0.9] mb-6 tracking-tighter uppercase">
               Oud IJzer <br />
-              <span className="text-rjmk-accent">Service Venlo</span>
+              <span className="text-rjmk-accent">Ophaalservice</span>
             </h1>
             
             <p className="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl leading-relaxed font-medium">
