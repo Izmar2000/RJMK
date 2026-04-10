@@ -28,7 +28,7 @@ export default function ProductDetailPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={material.image}
-            alt={material.name}
+            alt={material.nl.name}
             fill
             className="object-cover opacity-20 blur-[2px]"
             priority

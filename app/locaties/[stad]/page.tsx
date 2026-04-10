@@ -150,7 +150,6 @@ export default async function LocatiePage({ params }: { params: Promise<{ stad: 
                   </a>
                 </div>
               </div>
-              </div>
 
               <div className="glass-card p-8 rounded-xl bg-slate-100 border-slate-200">
                 <h3 className="text-xl font-display font-bold text-rjmk-dark mb-4 uppercase">Ook Actief In:</h3>

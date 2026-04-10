@@ -9,6 +9,23 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
+      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+        {/* Background Image & Overlays */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/rjmk-gebouw.png"
+            alt="RJMK gebouw Venlo"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-rjmk-blue/90 via-rjmk-blue/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-rjmk-blue/60 via-transparent to-transparent"></div>
+          <div className="grain-overlay"></div>
+        </div>
+
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          <div className="max-w-3xl">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white text-sm font-bold mb-6 backdrop-blur-md uppercase tracking-widest">
               <span className="w-2 h-2 rounded-full bg-rjmk-accent mr-2 animate-pulse"></span>
               Specialist in Venlo & Omstreken
