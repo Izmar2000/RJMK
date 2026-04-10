@@ -46,11 +46,19 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:0651352095" className="btn-primary text-lg md:text-xl px-8 py-4 whitespace-pre-wrap text-center leading-tight">
-                <Phone className="w-6 h-6 mr-3 shrink-0" /> {t('btnCall')}
+              <a href="tel:0651352095" className="btn-primary px-8 py-4 flex items-center justify-center gap-4 hover:-translate-y-1 transition-all duration-300 group">
+                <Phone className="w-8 h-8 text-white shrink-0 group-hover:scale-110 transition-transform" />
+                <div className="flex flex-col items-center text-center">
+                  <span className="text-xs font-bold uppercase tracking-wider opacity-80 mb-0.5">{t('btnCallSub')}</span>
+                  <span className="text-xl md:text-2xl font-display font-bold leading-tight">{t('btnCallMain')}</span>
+                </div>
               </a>
-              <Link href="/diensten/container-plaatsing" className="inline-flex items-center justify-center text-lg md:text-xl px-8 py-4 rounded-md border-2 border-white text-white font-bold transition-all duration-300 hover:bg-white hover:text-rjmk-blue backdrop-blur-md hover:-translate-y-1 whitespace-pre-wrap text-center leading-tight">
-                {t('btnTrends')} <ArrowRight className="w-6 h-6 ml-3 shrink-0" />
+              <Link href="/diensten/container-plaatsing" className="inline-flex items-center justify-center px-8 py-4 rounded-md border-2 border-white text-white font-bold transition-all duration-300 hover:bg-white hover:text-rjmk-blue backdrop-blur-md hover:-translate-y-1 group">
+                <div className="flex flex-col items-center text-center mr-4">
+                  <span className="text-xs font-bold uppercase tracking-wider opacity-80 mb-0.5">{t('btnTrendsSub')}</span>
+                  <span className="text-xl md:text-2xl font-display font-bold leading-tight">{t('btnTrendsMain')}</span>
+                </div>
+                <ArrowRight className="w-8 h-8 shrink-0 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
 
