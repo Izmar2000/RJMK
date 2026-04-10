@@ -16,7 +16,7 @@ export default function FaqSection({ locale }: { locale: string }) {
     },
     {
       q: "Welke metalen kopen jullie allemaal in?",
-      a: "Wij zijn gebrand op rood koper, messing, lood, aluminium, zink, oude accu's en uiteraard massaal bouw- en sloopstaal."
+      a: "Rood koper, messing, lood, aluminium, zink, oude accu's en uiteraard massaal bouw- en sloopstaal."
     },
     {
       q: "Kan ik als particulier ook inleveren?",
