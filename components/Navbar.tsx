@@ -54,7 +54,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">Home</Link>
+            <Link href="/" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">{t('home')}</Link>
             
             {/* Services Dropdown */}
             <div 
@@ -63,7 +63,7 @@ export default function Navbar() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button className="flex items-center text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors py-2 uppercase tracking-wide">
-                Diensten <ChevronDown className="w-4 h-4 ml-1" />
+                {t('diensten')} <ChevronDown className="w-4 h-4 ml-1" />
               </button>
               <div className={`absolute top-full left-0 w-64 bg-white border border-slate-200 rounded-md shadow-xl transition-all duration-200 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-2'}`}>
                 <div className="py-2">
@@ -75,12 +75,12 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/particulieren" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide underline-offset-4 decoration-2 decoration-rjmk-accent hover:underline">Particulieren</Link>
-            <Link href="/dagprijzen" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">Dagprijzen</Link>
-            <Link href="/inkoop-producten" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">Inkoop Producten</Link>
+            <Link href="/particulieren" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide underline-offset-4 decoration-2 decoration-rjmk-accent hover:underline">{t('particulieren')}</Link>
+            <Link href="/dagprijzen" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">{t('dagprijzen')}</Link>
+            <Link href="/inkoop-producten" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">{t('inkoopProducten')}</Link>
             <Link href="/nieuws" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide flex items-center">
               <span className="relative">
-                Nieuws
+                {t('nieuws')}
                 <span className="absolute -top-1 -right-2 w-1.5 h-1.5 bg-badge-green rounded-full animate-pulse"></span>
               </span>
             </Link>
@@ -105,7 +105,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link href="/contact" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">Contact</Link>
+            <Link href="/contact" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">{t('contact')}</Link>
           </nav>
 
           {/* CTA Button */}
@@ -128,24 +128,24 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-white z-40 lg:hidden transition-transform duration-300 ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'} pt-24 px-6 overflow-y-auto`}>
         <nav className="flex flex-col space-y-6 text-lg">
-          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Home</Link>
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">{t('home')}</Link>
           
           <div className="space-y-4 border-b border-slate-200 pb-4">
-            <div className="font-display font-bold text-2xl text-rjmk-accent">Diensten</div>
+            <div className="font-display font-bold text-2xl text-rjmk-accent">{t('diensten')}</div>
             <Link href="/diensten/oud-ijzer-ophalen" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Oud IJzer Ophalen</Link>
             <Link href="/diensten/metalen-inkoop" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Metalen Inkoop</Link>
             <Link href="/diensten/container-plaatsing" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Container Plaatsing</Link>
             <Link href="/diensten/kabelverwerking" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Kabelverwerking</Link>
           </div>
 
-          <Link href="/particulieren" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Particulieren</Link>
-          <Link href="/dagprijzen" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Dagprijzen</Link>
-          <Link href="/inkoop-producten" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Inkoop Producten</Link>
+          <Link href="/particulieren" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">{t('particulieren')}</Link>
+          <Link href="/dagprijzen" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">{t('dagprijzen')}</Link>
+          <Link href="/inkoop-producten" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">{t('inkoopProducten')}</Link>
           <div className="border-b border-slate-200 pb-4 flex items-center">
-             <Link href="/nieuws" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark">Nieuws & Kennisbank</Link>
+             <Link href="/nieuws" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark">{t('nieuws')} & Kennisbank</Link>
              <span className="w-2 h-2 bg-badge-green rounded-full animate-pulse ml-3"></span>
           </div>
-          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Contact</Link>
+          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">{t('contact')}</Link>
 
           <div className="glass-card p-8 rounded-xl bg-blue-50 border-blue-200">
             <h3 className="text-xl font-display font-bold text-rjmk-dark mb-4 uppercase">Direct een afspraak maken?</h3>

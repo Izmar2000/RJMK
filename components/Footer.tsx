@@ -2,8 +2,11 @@ import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, ShieldCheck, ChevronRight } from 'lucide-react';
 import { locaties } from '@/lib/locaties';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('Footer');
+  const tNav = useTranslations('Navigation');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -19,7 +22,7 @@ export default function Footer() {
               <Image src="/logo-rjmk.png" alt="RJMK" width={120} height={60} className="h-12 w-auto object-contain brightness-0 invert" />
             </Link>
             <p className="text-blue-100 text-sm leading-relaxed">
-              R. Janssen Metalen & Kabels is uw betrouwbare partner voor de inkoop van ferro en non-ferro metalen, kabelverwerking en gratis container plaatsing in Venlo en omstreken.
+              {t('about')}
             </p>
             <div className="flex items-center text-badge-green font-medium text-sm">
               <ShieldCheck className="w-5 h-5 mr-2" />
@@ -57,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/particulieren" className="flex items-center hover:text-rjmk-accent transition-colors">
-                  <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> Particulieren
+                  <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> {tNav('particulieren')}
                 </Link>
               </li>
               <li>
@@ -77,12 +80,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/dagprijzen" className="flex items-center hover:text-rjmk-accent transition-colors">
-                  <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> Actuele Dagprijzen
+                  <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> {tNav('dagprijzen')}
                 </Link>
               </li>
               <li>
                 <Link href="/nieuws" className="flex items-center hover:text-rjmk-accent transition-colors text-badge-green font-medium">
-                  <ChevronRight className="w-4 h-4 mr-2 text-badge-green/50" /> Kennisbank & Nieuws
+                  <ChevronRight className="w-4 h-4 mr-2 text-badge-green/50" /> {tNav('nieuws')}
                 </Link>
               </li>
             </ul>
