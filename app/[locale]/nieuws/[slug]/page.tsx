@@ -26,9 +26,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export function generateStaticParams() {
-  return nieuwsArtikelen.map((article) => ({
-    slug: article.slug,
-  }));
+  const locales = ['nl', 'en', 'de'];
+  const params: { locale: string; slug: string }[] = [];
+  
+  for (const locale of locales) {
+    for (const article of nieuwsArtikelen) {
+      params.push({ locale, slug: article.slug });
+    }
+  }
+  return params;
 }
 
 export default async function NieuwsArticlePage({ params }: Props) {
@@ -45,7 +51,7 @@ export default async function NieuwsArticlePage({ params }: Props) {
   const title = t(`${article.slug}.title`);
   const category = t(`${article.slug}.category`);
   const content = t(`${article.slug}.content`);
-  const paragraphs = content.split('\n\n');
+  const paragraphs = typeof content === 'string' ? content.split('\n\n') : [];
 
   return (
     <div className="bg-slate-50 min-h-screen pb-24">
