@@ -1,15 +1,16 @@
 'use client';
 
-import { useParams, notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { materials, getMaterialBySlug } from '@/lib/materials';
 import { metaalPrijzen } from '@/lib/prices';
 import Image from 'next/image';
 import { Phone, ArrowRight, MessageCircle, CheckCircle2, Factory, Recycle, ShieldCheck, ChevronRight, TrendingUp, TrendingDown, Minus } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
-export default function ProductDetailPage() {
-  const params = useParams();
-  const slug = params.slug as string;
+export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+  const { slug, locale } = await params;
+  
+  
   const material = getMaterialBySlug(slug);
 
   if (!material) {
@@ -28,7 +29,7 @@ export default function ProductDetailPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src={material.image}
-            alt={material.nl.name}
+            alt={material[locale as "nl"|"en"|"de"].name}
             fill
             className="object-cover opacity-20 blur-[2px]"
             priority
@@ -43,18 +44,18 @@ export default function ProductDetailPage() {
                 <Recycle className="w-4 h-4 mr-2" /> Metaal Recycling Venlo
               </div>
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-8 leading-[1] uppercase tracking-tighter">
-                {material.nl.name} <br />
+                {material[locale as "nl"|"en"|"de"].name} <br />
                 <span className="text-rjmk-accent font-sans italic lowercase font-medium tracking-normal text-3xl md:text-5xl block mt-2 opacity-80">
                   {material.id === 'rood-koper' ? 'inkoop & verwerking' : 'duurzame recycling'}
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 max-w-2xl leading-relaxed mb-12">
-                {material.nl.shortDesc}
+                {material[locale as "nl"|"en"|"de"].shortDesc}
               </p>
               
               <div className="flex flex-wrap gap-6">
                 <a 
-                  href={`https://wa.me/31651352095?text=Hallo RJMK, wat is de actuele trend voor ${material.nl.name}?`} 
+                  href={`https://wa.me/31651352095?text=Hallo RJMK, wat is de actuele trend voor ${material[locale as "nl"|"en"|"de"].name}?`} 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-10 rounded-md transition-all shadow-xl text-xl"
@@ -117,9 +118,9 @@ export default function ProductDetailPage() {
             {/* Main Column */}
             <div className="lg:w-2/3 space-y-16">
               <div>
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-rjmk-dark mb-8 uppercase tracking-tight">Expertise in {material.nl.name}</h2>
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-rjmk-dark mb-8 uppercase tracking-tight">Expertise in {material[locale as "nl"|"en"|"de"].name}</h2>
                 <div className="prose prose-lg prose-slate max-w-none">
-                  {material.nl.description.split('\n\n').map((paragraph, i) => (
+                  {material[locale as "nl"|"en"|"de"].description.split('\n\n').map((paragraph, i) => (
                     <p key={i} className="text-slate-600 text-lg leading-relaxed mb-6 whitespace-pre-wrap">
                       {paragraph}
                     </p>
@@ -129,7 +130,7 @@ export default function ProductDetailPage() {
 
               {/* Properties Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {material.nl.properties.map((prop, i) => (
+                {material[locale as "nl"|"en"|"de"].properties.map((prop, i) => (
                   <div key={i} className="flex items-center p-6 rounded-2xl bg-slate-50 border border-slate-100 group hover:border-rjmk-accent transition-colors">
                     <div className="w-12 h-12 rounded-xl bg-rjmk-blue/10 flex items-center justify-center mr-6 text-rjmk-blue group-hover:bg-rjmk-accent group-hover:text-white transition-all">
                       <CheckCircle2 className="w-6 h-6" />
@@ -150,7 +151,7 @@ export default function ProductDetailPage() {
                     <h3 className="text-3xl font-display font-bold uppercase tracking-tight">Het Recycling Proces</h3>
                   </div>
                   <p className="text-blue-100 text-lg leading-relaxed">
-                    {material.nl.recyclingProcess}
+                    {material[locale as "nl"|"en"|"de"].recyclingProcess}
                   </p>
                 </div>
               </div>
@@ -163,7 +164,7 @@ export default function ProductDetailPage() {
                 <ShieldCheck className="w-12 h-12 text-rjmk-accent mb-6" />
                 <h3 className="text-2xl font-display font-bold text-rjmk-dark mb-4 uppercase">Onze Reputatie</h3>
                 <p className="text-slate-600 mb-8 leading-relaxed italic border-l-4 border-rjmk-accent pl-6">
-                  {material.nl.whyRJMK}
+                  {material[locale as "nl"|"en"|"de"].whyRJMK}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-center text-sm font-bold text-rjmk-dark uppercase tracking-widest">
@@ -183,14 +184,14 @@ export default function ProductDetailPage() {
 
               {/* Contact Sidebar */}
               <div className="p-10 rounded-3xl bg-rjmk-blue text-white shadow-xl">
-                <h3 className="text-2xl font-display font-bold mb-6 uppercase">Wilt u {material.nl.name} inleveren?</h3>
+                <h3 className="text-2xl font-display font-bold mb-6 uppercase">Wilt u {material[locale as "nl"|"en"|"de"].name} inleveren?</h3>
                 <p className="text-blue-100 mb-10">
                   Neem contact op voor de actuele trend en een vakkundige afhandeling in Venlo.
                 </p>
                 <a href="tel:0651352095" className="flex items-center justify-center w-full bg-white text-rjmk-blue font-bold py-4 rounded-xl mb-4 hover:bg-slate-100 transition-colors">
                   <Phone className="w-5 h-5 mr-3" /> Direct Bellen
                 </a>
-                <a href={`https://wa.me/31651352095?text=Afspraak inplannen voor ${material.nl.name}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition-colors">
+                <a href={`https://wa.me/31651352095?text=Afspraak inplannen voor ${material[locale as "nl"|"en"|"de"].name}`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition-colors">
                   <MessageCircle className="w-5 h-5 mr-3" /> WhatsApp Bericht
                 </a>
               </div>

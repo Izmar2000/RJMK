@@ -15,6 +15,7 @@ export interface Material {
   image: string;
   nl: MaterialTranslation;
   en: MaterialTranslation;
+  de: MaterialTranslation;
 }
 
 export const materials: Material[] = [
@@ -41,6 +42,16 @@ export const materials: Material[] = [
       recyclingProcess: 'The copper is sorted by purity, stripped of contaminants, and melted into new semi-finished products. This saves significant energy compared to primary smelting.',
       whyRJMK: 'With years of experience in Venlo, RJMK stands for honesty. We weigh on calibrated scales and handle financial settlements quickly.',
       properties: ['High-value metal', 'Excellent conductivity', '100% recyclable', 'High market value']
+    },
+    de: {
+      name: 'Kupfer (Millberry)',
+      title: 'Kupfer Ankauf Venlo | Faire Marktpreise & Schnelle Abwicklung',
+      metaDescription: 'Suchen Sie einen zuverlässigen Partner für den Kupferankauf in Venlo? RJMK bietet transparente Marktpreise und professionelles Recycling.',
+      shortDesc: 'Reines Kupfer aus Kabeln, Blechen oder Rohren. Eines der wertvollsten Metalle im Recycling.',
+      description: 'Kupfer ist für Elektronik und Infrastruktur unverzichtbar. Bei RJMK in Venlo sind wir auf die fachgerechte Sortierung und Verarbeitung verschiedener Kupferströme spezialisiert. Wir gewährleisten transparente Ankaufspreise basierend auf LME-Markttrends.',
+      recyclingProcess: 'Das Kupfer wird nach Reinheit sortiert, von Verunreinigungen befreit und zu neuen Halbfabrikaten geschmolzen. Dies spart im Vergleich zur Primärgewinnung viel Energie.',
+      whyRJMK: 'Mit jahrelanger Erfahrung in Venlo steht RJMK für Ehrlichkeit. Wir wiegen auf geeichten Waagen und sorgen für eine schnelle finanzielle Abwicklung.',
+      properties: ['Hochwertiges Metall', 'Hervorragende Leitfähigkeit', '100% recycelbar', 'Hoher Marktwert']
     }
   },
   {
@@ -66,6 +77,16 @@ export const materials: Material[] = [
       recyclingProcess: 'The brass is stripped of foreign attachments and melted in specialized furnaces to form new high-quality alloys.',
       whyRJMK: 'Our reputation in Venlo is built on years of reliable partnership. We provide down-to-earth service and fast handling.',
       properties: ['Durable alloy', 'Corrosion resistant', 'Versatile', 'Gold-like color']
+    },
+    de: {
+      name: 'Messing',
+      title: 'Messing Ankauf Venlo | Transparenz & Guter Ruf',
+      metaDescription: 'Messing recyceln bei RJMK Venlo? Wir kaufen alle Arten von Messing, von Wasserhähnen bis hin zu Industrieresten.',
+      shortDesc: 'Eine Legierung aus Kupfer und Zink, erkennbar an der goldähnlichen Farbe.',
+      description: 'Messing ist eine Legierung, die häufig in der Sanitär- und Maschinenbaubranche verwendet wird. RJMK kauft alle Varianten von Messing und fokussiert sich auf transparente, ehrliche Markttrends.',
+      recyclingProcess: 'Das Messing wird von Fremdanhaftungen befreit und in speziellen Öfen geschmolzen, um neue hochwertige Legierungen zu bilden.',
+      whyRJMK: 'Unser Ruf in Venlo basiert auf jahrelanger verlässlicher Partnerschaft. Wir bieten schnellen und pragmatischen Service.',
+      properties: ['Langlebige Legierung', 'Korrosionsbeständig', 'Vielseitig', 'Goldähnliche Farbe']
     }
   },
   {
@@ -91,6 +112,16 @@ export const materials: Material[] = [
       recyclingProcess: 'Aluminium is separated by quality, cleaned, and melted. This requires only 5% of the energy needed for primary extraction.',
       whyRJMK: 'In the Venlo region, we have built an excellent reputation by always following through on our agreements and communicating transparently.',
       properties: ['Lightweight', 'Non-rusting', 'Infinitely recyclable', 'Energy saving']
+    },
+    de: {
+      name: 'Aluminium',
+      title: 'Aluminium Recycling Venlo | Professioneller Ankauf',
+      metaDescription: 'Aluminiumankauf in Venlo für Profile, Bleche und Felgen. RJMK bietet professionelles Recycling.',
+      shortDesc: 'Leicht und stark. Von Profilen und Blechen bis hin zu Felgen und Gussaluminium.',
+      description: 'Aluminium ist für eine zirkuläre Wirtschaft entscheidend. Bei RJMK verarbeiten wir ein breites Spektrum an Aluminiumströmen aus Industrie und Handwerk.',
+      recyclingProcess: 'Aluminium wird nach Qualität getrennt, gereinigt und geschmolzen. Dies erfordert nur 5% der Energie der Primärgewinnung.',
+      whyRJMK: 'In der Region Venlo haben wir uns einen hervorragenden Ruf aufgebaut, indem wir stets unsere Vereinbarungen einhalten.',
+      properties: ['Leichtgewicht', 'Rostet nicht', 'Unendlich recycelbar', 'Energiesparend']
     }
   },
   {
@@ -116,6 +147,16 @@ export const materials: Material[] = [
       recyclingProcess: 'In our cable shredder, cables are mechanically separated into heavy copper granules and light plastic. The granulate serves directly as a new raw material.',
       whyRJMK: 'By processing in-house, we offer maximum transparency regarding copper yield and fast service.',
       properties: ['In-house shredder', 'Efficient separation', 'High-quality yield', 'Eco-friendly']
+    },
+    de: {
+      name: 'Kabel & Leitungen',
+      title: 'Kabelrecycling Venlo | Kupfer- & Aluminiumkabel | RJMK',
+      metaDescription: 'Alte Kabel recyceln? RJMK verfügt über einen eigenen Kabelshredder in Venlo.',
+      shortDesc: 'Kupfer- und Aluminiumkabel mit oder ohne Isolierung. Von Erdkabeln bis hin zu Haushaltskabeln.',
+      description: 'RJMK betreibt in Venlo eine eigene Kabelshredder-Anlage. Wir verarbeiten PVC-Kabel und Bleikabel umweltfreundlich zu reinem Granulat.',
+      recyclingProcess: 'In unserem Shredder werden Kabel mechanisch in schweres Kupfergranulat und leichtes Kunststoff granuliert.',
+      whyRJMK: 'Durch die eigene Verarbeitung bieten wir maximale Transparenz über den Kupferertrag und schnellen Service.',
+      properties: ['Eigener Shredder', 'Effiziente Trennung', 'Hochwertiger Ertrag', 'Umweltfreundlich']
     }
   },
   {
@@ -141,6 +182,16 @@ export const materials: Material[] = [
       recyclingProcess: 'Iron is sorted and shredded or sheared for the steel mill, where it is melted down again into new steel.',
       whyRJMK: 'We deliver on our promises with a down-to-earth Venlo approach. Our transparency in weighing and trends makes us a valued partner.',
       properties: ['Basic raw material', 'Collection service', 'Business & Private', 'Fast removal']
+    },
+    de: {
+      name: 'Altmetall & Schrott',
+      title: 'Schrottabholung Venlo | Zuverlässig & Transparent',
+      metaDescription: 'Altmetall in Venlo abgeben? RJMK ist Ihr Partner für Abholung und Ankauf von Schrott.',
+      shortDesc: 'Von Baustahl über Träger bis hin zu Mischschrott. Die Grundlage des Metallrecyclings.',
+      description: 'RJMK in Venlo verarbeitet alle Arten von Eisenströmen. Wir bieten kompetente Lösungen durch unseren Abholservice und setzen auf langfristige Partnerschaften.',
+      recyclingProcess: 'Schrott wird sortiert und für das Stahlwerk geshreddert oder geschnitten, wo es zu neuem Stahl eingeschmolzen wird.',
+      whyRJMK: 'Wir halten unsere Versprechen mit einer pragmatischen Herangehensweise. Unsere Transparenz macht uns zu einem geschätzten Partner.',
+      properties: ['Grundrohstoff', 'Abholservice', 'Gewerblich & Privat', 'Schnelle Abfuhr']
     }
   },
   {
@@ -166,6 +217,16 @@ export const materials: Material[] = [
       recyclingProcess: 'Batteries are mechanically separated into lead, plastic, and acid. The lead is refined for new battery production.',
       whyRJMK: 'Due to our transparent work method, companies have been coming to us for years for responsible battery recycling.',
       properties: ['Eco-conscious', 'Safe disposal', 'Lead recycling expert', 'Short communication lines']
+    },
+    de: {
+      name: 'Batterien & Blei',
+      title: 'Batterierecycling Venlo | Verantwortungsvolle Verarbeitung | RJMK',
+      metaDescription: 'Alte Batterien abgeben? RJMK sorgt in Venlo für eine sichere Annahme von Bleiakkus.',
+      shortDesc: 'Bleiakkus aus Fahrzeugen und Maschinen. Gefährlicher Abfall, der professionell recycelt werden muss.',
+      description: 'Batterierecycling ist für die Umwelt von entscheidender Bedeutung. RJMK ist Ihr zertifizierter Partner in Venlo für die sichere Annahme und Entsorgung.',
+      recyclingProcess: 'Batterien werden mechanisch in Blei, Kunststoff und Säure getrennt. Das Blei wird für die neue Batterieproduktion raffiniert.',
+      whyRJMK: 'Dank unserer transparenten Arbeitsweise wenden sich Unternehmen seit Jahren für verantwortungsvolles Recycling an uns.',
+      properties: ['Umweltbewusst', 'Sichere Entsorgung', 'Bleirecycling-Experte', 'Kurze Kommunikationswege']
     }
   }
 ];

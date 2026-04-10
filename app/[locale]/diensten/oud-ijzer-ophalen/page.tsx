@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Phone, ArrowRight, Truck, CheckCircle2, MapPin, Send, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 const collectionSchema = z.object({
   naam: z.string().min(2, 'Naam is verplicht'),

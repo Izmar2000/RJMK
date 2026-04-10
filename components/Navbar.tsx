@@ -1,12 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Menu, X, Phone, Mail, ChevronDown, ShieldCheck } from 'lucide-react';
 import { locaties } from '@/lib/locaties';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default function Navbar() {
+  const t = useTranslations('Navigation');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -35,9 +38,7 @@ export default function Navbar() {
           </div>
           <div className="flex items-center space-x-4">
             <div className={`flex items-center space-x-3 border-l border-slate-300 pl-4 transition-all duration-500`}>
-              <span className="cursor-pointer text-rjmk-dark font-bold hover:text-rjmk-accent transition-colors">NL</span>
-              <span className="text-slate-300">|</span>
-              <span className="cursor-pointer text-slate-400 hover:text-rjmk-accent transition-colors font-medium">DE</span>
+              <LocaleSwitcher />
             </div>
           </div>
         </div>
@@ -77,6 +78,12 @@ export default function Navbar() {
             <Link href="/particulieren" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide underline-offset-4 decoration-2 decoration-rjmk-accent hover:underline">Particulieren</Link>
             <Link href="/dagprijzen" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">Dagprijzen</Link>
             <Link href="/inkoop-producten" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide">Inkoop Producten</Link>
+            <Link href="/nieuws" className="text-sm font-bold text-rjmk-dark hover:text-rjmk-accent transition-colors uppercase tracking-wide flex items-center">
+              <span className="relative">
+                Nieuws
+                <span className="absolute -top-1 -right-2 w-1.5 h-1.5 bg-badge-green rounded-full animate-pulse"></span>
+              </span>
+            </Link>
 
             {/* Region Dropdown */}
             <div 
@@ -134,6 +141,10 @@ export default function Navbar() {
           <Link href="/particulieren" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Particulieren</Link>
           <Link href="/dagprijzen" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Dagprijzen</Link>
           <Link href="/inkoop-producten" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Inkoop Producten</Link>
+          <div className="border-b border-slate-200 pb-4 flex items-center">
+             <Link href="/nieuws" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark">Nieuws & Kennisbank</Link>
+             <span className="w-2 h-2 bg-badge-green rounded-full animate-pulse ml-3"></span>
+          </div>
           <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">Contact</Link>
 
           <div className="glass-card p-8 rounded-xl bg-blue-50 border-blue-200">

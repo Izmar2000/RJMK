@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { Truck, MapPin, Phone, MessageCircle, ArrowRight, CheckCircle2, Recycle, Info, Scale, ShieldCheck } from 'lucide-react';
 
 export default function ParticulierenPage() {

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import { Phone, Mail, MapPin, ShieldCheck, ChevronRight } from 'lucide-react';
 import { locaties } from '@/lib/locaties';
@@ -78,6 +78,11 @@ export default function Footer() {
               <li>
                 <Link href="/dagprijzen" className="flex items-center hover:text-rjmk-accent transition-colors">
                   <ChevronRight className="w-4 h-4 mr-2 text-rjmk-accent/50" /> Actuele Dagprijzen
+                </Link>
+              </li>
+              <li>
+                <Link href="/nieuws" className="flex items-center hover:text-rjmk-accent transition-colors text-badge-green font-medium">
+                  <ChevronRight className="w-4 h-4 mr-2 text-badge-green/50" /> Kennisbank & Nieuws
                 </Link>
               </li>
             </ul>

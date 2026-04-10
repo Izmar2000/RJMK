@@ -2,7 +2,7 @@
 
 import { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { ArrowRight, TrendingUp, TrendingDown, Minus, Info } from 'lucide-react';
 import { materials } from '@/lib/materials';
 import { metaalPrijzen } from '@/lib/prices';

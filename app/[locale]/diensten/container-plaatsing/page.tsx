@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { Factory, Send, CheckCircle2, Truck, Calendar, Clock, Phone, MapPin, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 const containerSchema = z.object({
   bedrijfsnaam: z.string().min(2, 'Bedrijfsnaam is verplicht'),

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { Phone, ArrowRight, Truck, Recycle, Euro, MapPin, CheckCircle2, Factory, ShieldCheck, AlertCircle } from 'lucide-react';
 import { Info } from 'lucide-react';
 import PrijzenWidget from '@/components/PrijzenWidget';

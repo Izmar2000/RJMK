@@ -2,7 +2,7 @@
 
 import { Metadata } from 'next';
 import PrijzenWidget from '@/components/PrijzenWidget';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { ArrowRight, Phone, ShieldCheck, TrendingUp, Info, CheckCircle2, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 

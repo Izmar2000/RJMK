@@ -1,0 +1,15 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "particulieren": "Private Clients",
+    "dagprijzen": "Daily Prices",
+    "inkoopProducten": "Buy Products",
+    "nieuws": "News",
+    "contact": "Contact",
+    "diensten": "Our Services"
+  },
+  "Footer": {
+    "about": "RJMK has been a household name in metal recycling for years. Short communication lines, honest weighing, and transparent daily prices.",
+    "links": "Quick Links"
+  }
+}

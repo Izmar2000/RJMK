@@ -1,0 +1,15 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "particulieren": "Particulieren",
+    "dagprijzen": "Dagprijzen",
+    "inkoopProducten": "Inkoop Producten",
+    "nieuws": "Nieuws",
+    "contact": "Contact",
+    "diensten": "Onze Diensten"
+  },
+  "Footer": {
+    "about": "RJMK is al jaren een begrip in de metaalrecycling. Korte lijnen, eerlijke weging en transparante dagkoersen.",
+    "links": "Snelle Links"
+  }
+}

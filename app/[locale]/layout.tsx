@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter, Barlow_Condensed, JetBrains_Mono } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -29,11 +29,28 @@ export const metadata: Metadata = {
   description: 'RJMK haalt oud ijzer, schroot en alle metalen op in Venlo en omgeving. Gratis container plaatsing. Scherpe dagprijzen. Bel: 06-513 520 95.',
 };
 
-export default function RootLayout({
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
+import {notFound} from 'next/navigation';
+import {routing} from '@/i18n/routing';
+
+export default async function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode;
+  params: Promise<{locale: string}>;
 }) {
+  const {locale} = await params;
+
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+ 
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
+  
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -65,7 +82,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="nl" className={`${inter.variable} ${barlow.variable} ${jetbrains.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${barlow.variable} ${jetbrains.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -73,9 +90,11 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col" suppressHydrationWarning>
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

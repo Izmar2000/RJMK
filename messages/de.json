@@ -1,0 +1,15 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "particulieren": "Privatkunden",
+    "dagprijzen": "Tagespreise",
+    "inkoopProducten": "Ankaufsprodukte",
+    "nieuws": "Nachrichten",
+    "contact": "Kontakt",
+    "diensten": "Unsere Leistungen"
+  },
+  "Footer": {
+    "about": "RJMK ist seit Jahren ein fester Begriff im Metallrecycling. Kurze Wege, ehrliche Verwiegung und transparente Tagespreise.",
+    "links": "Schnelle Links"
+  }
+}
