@@ -16,9 +16,9 @@
     "heroSpecialist": "Specialist in Venlo & Surroundings",
     "heroTitle1": "Scrap Metal",
     "heroTitle2": "Collection Service",
-    "heroDesc": "RJMK is your reliable partner for metal purchasing, cable recycling, and free container placement. We offer honest market trends, total transparency, and professional handling.",
-    "btnCall": "Call Now",
-    "btnTrends": "View Market Trends",
+    "heroDesc": "RJMK is your reliable partner in Venlo for buying scrap iron and all kinds of metals. We offer a fast collection service, fair weighing prices, and free container placement for large volumes.",
+    "btnCall": "Scrap Iron\nCollection",
+    "btnTrends": "Request\nContainer",
     "trust1": "Fast Settlement",
     "trust2": "Free Collection Service",
     "trust3": "Certified & Reliable",
@@ -30,8 +30,8 @@
     "service2Desc": "Purchasing of all types of non-ferrous metals such as copper, brass, aluminum, lead, and zinc against the best daily prices.",
     "service3Title": "Container Placement",
     "service3Desc": "Free placement of containers for your metal waste. Ideal for construction sites, demolition work, and industrial companies.",
-    "service4Title": "Cable Recycling",
-    "service4Desc": "With our own professional cable shredder, we process copper and aluminum cables efficiently and environmentally responsibly.",
+    "service4Title": "Demolition & Clearance",
+    "service4Desc": "Specialized in business clearances and the dismantling of heavy racking or machines. We safely take all industrial metal waste and dismantling work off your hands.",
     "readMore": "Read more",
     "pricesTitle": "Transparent ",
     "pricesTitleHighlight": "Daily Prices",
@@ -57,5 +57,29 @@
     "ctaTitle2": "For Your Business?",
     "ctaDesc": "Do you regularly have metal waste? We place a custom container for free. Full? One phone call and we will swap it within 24 hours.",
     "btnCta": "Request a Container Now"
+  },
+  "NieuwsArticles": {
+    "circulaire-kracht-rood-koper": {
+      "title": "The Circular Power of Red Copper",
+      "category": "Market News",
+      "summary": "Discover how red copper is 100% recycled indefinitely without degradation.",
+      "content": "Copper is one of the few materials on Earth that can be 100% recycled without any loss of its properties or conductivity. This capacity for infinite recycling is why red copper commands an extremely high residual value on the London Metal Exchange (LME).\n\nAccording to international estimates, up to 80% of all copper ever mined is still in use today. From a sustainability perspective, copper recycling is essential: converting scrap copper into new material requires about 85% less energy than mining copper ore.\n\nIn regions with strong industrial and logistics infrastructures, such as Venlo, specialized recycling companies play an indispensable role by efficiently returning copper scrap from demolition and installation work back into the supply chain. This not only provides local businesses with transparent financial settlements but also directly reduces the global carbon footprint."
+    },
+    "staal-meest-gerecyclede-materiaal": {
+      "title": "Steel: Most Recycled Material",
+      "category": "Sustainability",
+      "summary": "Why scrap steel is the absolute backbone of global heavy industry.",
+      "content": "Scrap iron and steel form the backbone of metal recycling worldwide. Steel is the most recycled material globally, partly due to its magnetic properties, which make mechanical separation extremely efficient.\n\nUsing scrap steel in blast furnaces instead of iron ore and coal saves approximately 74% of the energy normally required, resulting in massive reductions in CO2 emissions. A modern steel plant continuously uses scrap iron as the base layer for new production.\n\nEspecially in construction, demolition, and logistics machinery around Venlo, massive amounts of scrap are generated. Reliable collection services and tightly coordinated container placements ensure that this 'secondary steel' is shredded, sheared, and transported to foundries in record time. It is a cycle built purely on factual efficiency."
+    },
+    "loodaccus-slagingspercentage": {
+      "title": "Lead Batteries: 99% Success Rate",
+      "category": "Industry & Environment",
+      "summary": "The unprecedented success story of safely recycling toxic industrial lead batteries.",
+      "content": "Although lead-acid batteries are classified as hazardous waste (chemical waste) due to toxic lead and battery acid, they paradoxically represent one of the biggest success stories in the recycling industry. In Europe, nearly 99% of discarded lead-acid batteries are successfully recycled today.\n\nDuring the mechanical processing, batteries are crushed in basins. The heavier lead components drop to the bottom, while the plastic casing (usually polypropylene) floats to the surface. Meanwhile, the sulfuric acid is safely drained and chemically neutralized into harmless residue and water.\n\nBoth the recycled lead and the plastic casing become the primary raw materials for producing brand-new batteries. Because strict environmental legislation regulates their intake and processing, it is crucial to collaborate with certified collection stations in the Venlo area that strictly adhere to safe disposal protocols."
+    }
+  },
+  "NieuwsUI": {
+    "readMore": "Read article",
+    "backToNews": "Back to News"
   }
 }

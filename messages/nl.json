@@ -16,9 +16,9 @@
     "heroSpecialist": "Specialist in Venlo & Omstreken",
     "heroTitle1": "Oud IJzer",
     "heroTitle2": "Ophaalservice",
-    "heroDesc": "RJMK is uw betrouwbare partner voor metalen inkoop, kabelverwerking en gratis container plaatsing. Wij bieden eerlijke markttrends, volledige transparantie en een vakkundige afhandeling.",
-    "btnCall": "Direct Bellen",
-    "btnTrends": "Bekijk Markttrends",
+    "heroDesc": "RJMK is uw betrouwbare partner in Venlo voor de inkoop van oud ijzer en alle soorten metalen. Wij bieden een snelle ophaalservice, eerlijke weegprijzen en gratis container plaatsing voor grote volumes.",
+    "btnCall": "Oud IJzer\nOphaalservice",
+    "btnTrends": "Container\nLaten Plaatsen",
     "trust1": "Snelle Afwikkeling",
     "trust2": "Gratis Ophaaldienst",
     "trust3": "Erkend & Betrouwbaar",
@@ -30,8 +30,8 @@
     "service2Desc": "Inkoop van alle soorten non-ferro metalen zoals koper, messing, aluminium, lood en zink tegen de beste dagprijzen.",
     "service3Title": "Container Plaatsing",
     "service3Desc": "Gratis plaatsing van containers voor uw metaalafval. Ideaal voor bouwplaatsen, sloopwerken en industriële bedrijven.",
-    "service4Title": "Kabelverwerking",
-    "service4Desc": "Met onze eigen professionele kabelshredder verwerken wij koper- en aluminiumkabels efficiënt en milieuvriendelijk.",
+    "service4Title": "Sloop & Bedrijfsontruiming",
+    "service4Desc": "Gespecialiseerd in bedrijfsontruimingen en het demonteren van zware stellages of machines. Wij nemen al het industriële metaalafval en demontagewerk veilig uit handen.",
     "readMore": "Lees meer",
     "pricesTitle": "Transparante ",
     "pricesTitleHighlight": "Dagprijzen",
@@ -57,5 +57,29 @@
     "ctaTitle2": "Voor Uw Bedrijf?",
     "ctaDesc": "Heeft u regelmatig metaalafval? Wij plaatsen gratis een container op maat. Vol? Eén telefoontje en wij wisselen hem binnen 24 uur om.",
     "btnCta": "Vraag Direct Een Container Aan"
+  },
+  "NieuwsArticles": {
+    "circulaire-kracht-rood-koper": {
+      "title": "De Circulaire Kracht van Rood Koper",
+      "category": "Marktnieuws",
+      "summary": "Ontdek hoe rood koper 100% vervalvrij wordt gerecycled en hergebruikt.",
+      "content": "Koper is een van de weinige grondstoffen ter wereld die 100% gerecycled kan worden zonder enig verlies van materiaaleigenschappen of geleidbaarheid. Dit vermogen tot oneindige recycling is de reden waarom rood koper een extreem hoge restwaarde vertegenwoordigt op de London Metal Exchange (LME).\n\nVolgens internationale schattingen wordt tot wel 80% van al het koper dat ooit is gemijnd, vandaag de dag nog steeds gebruikt. Vanuit een duurzaamheidsperspectief is koperrecycling essentieel: het omzetten van oud koper in nieuw materiaal vergt ongeveer 85% minder energie ten opzichte van het winnen van kopererts.\n\nIn regio's met een sterke industriële en logistieke infrastructuur, waaronder Venlo, spelen gespecialiseerde recyclingbedrijven een onmisbare rol door koperresten uit sloop- en installatiewerk efficiënt terug in de keten te brengen. Dit helpt lokale bedrijven niet alleen aan een transparantere financiële afwikkeling, maar dringt ook direct de wereldwijde CO2-voetafdruk terug."
+    },
+    "staal-meest-gerecyclede-materiaal": {
+      "title": "Staal: Meest Gerecyclede Materiaal",
+      "category": "Duurzaamheid",
+      "summary": "Waarom staalschroot wereldwijd de ruggengraat van de zware industrie vormt.",
+      "content": "Oud ijzer en staalschroot vormen wereldwijd de ruggengraat van de metaalrecycling. Staal is het meest gerecyclede materiaal ter wereld, deels dankzij de magnetische eigenschappen die machinale scheiding uiterst efficiënt maken.\n\nHet gebruik van staalschroot in hoogovens in plaats van ijzererts en steenkool bespaart ongeveer 74% van de benodigde energie, wat neerkomt op massale verminderingen van CO2-emissies. Een moderne staalfabriek gebruikt doorlopend oud ijzer als basislaag voor nieuwe producties.\n\nVooral bij bouw- en constructiewerken of in de logistieke machinebouw rondom Venlo komt veel schroot vrij. Betrouwbare ophaaldiensten en strak gecoördineerde containerplaatsingen zorgen ervoor dat dit zogenaamde 'secundaire staal' binnen de kortste keren wordt geshredderd, geknipt en naar gieterijen wordt getransporteerd. Het is een cyclus die puur op feitelijke efficiëntie is gebouwd."
+    },
+    "loodaccus-slagingspercentage": {
+      "title": "Loodaccu's: 99% Slagingspercentage",
+      "category": "Industrie & Milieu",
+      "summary": "Het ongekende succesverhaal van het veilig recyclen van zware industriële loodaccu's.",
+      "content": "Hoewel loodzuuraccu's als gevaarlijk afval (chemisch afval) worden geclassificeerd vanwege het toxische lood en batterijzuur, vormen ze paradoxaal genoeg een van de grootste succesverhalen binnen de recyclingindustrie. In Europa wordt inmiddels bijna 99% van de afgedankte loodaccu's met succes gerecycled.\n\nTijdens het mechanische verwerkingsproces worden accu's verbrijzeld in bassins. De loodcomponenten zijn aanzienlijk zwaarder en zinken, terwijl de kunststof behuizing (meestal polypropyleen) naar de oppervlakte drijft. Het zwavelzuur wordt intussen veilig getapt en chemisch geneutraliseerd tot onschadelijk residu en water.\n\nZowel het gerecyclede lood als de kunststof behuizing vormen de primaire grondstof voor het produceren van gloednieuwe accu's. Omdat strenge milieuwetgeving de inname en verwerking reguleert, is het cruciaal om samen te werken met MRF-gecertificeerde inzamelingsstations in Venlo en omstreken die de protocollen voor veilige afvoer strikt naleven."
+    }
+  },
+  "NieuwsUI": {
+    "readMore": "Lees artikel",
+    "backToNews": "Terug naar Nieuws"
   }
 }

@@ -70,7 +70,7 @@ export default function Navbar() {
                   <Link href="/diensten/oud-ijzer-ophalen" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-rjmk-accent transition-colors">Oud IJzer Ophalen</Link>
                   <Link href="/diensten/metalen-inkoop" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-rjmk-accent transition-colors">Metalen Inkoop</Link>
                   <Link href="/diensten/container-plaatsing" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-rjmk-accent transition-colors">Container Plaatsing</Link>
-                  <Link href="/diensten/kabelverwerking" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-rjmk-accent transition-colors">Kabelverwerking</Link>
+                  <Link href="/diensten/bedrijfsontruiming" className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-rjmk-accent transition-colors">Bedrijfsontruiming</Link>
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function Navbar() {
             <Link href="/diensten/oud-ijzer-ophalen" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Oud IJzer Ophalen</Link>
             <Link href="/diensten/metalen-inkoop" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Metalen Inkoop</Link>
             <Link href="/diensten/container-plaatsing" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Container Plaatsing</Link>
-            <Link href="/diensten/kabelverwerking" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Kabelverwerking</Link>
+            <Link href="/diensten/bedrijfsontruiming" onClick={() => setIsMobileMenuOpen(false)} className="block pl-4 text-slate-600 hover:text-rjmk-blue">Bedrijfsontruiming</Link>
           </div>
 
           <Link href="/particulieren" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-bold text-2xl text-rjmk-dark border-b border-slate-200 pb-4">{t('particulieren')}</Link>

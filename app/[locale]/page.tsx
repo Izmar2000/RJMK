@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import { Link } from '@/i18n/routing';
-import { Phone, ArrowRight, Truck, Recycle, Euro, MapPin, CheckCircle2, Factory, ShieldCheck, AlertCircle } from 'lucide-react';
+import { Phone, ArrowRight, Truck, Recycle, Euro, MapPin, CheckCircle2, Factory, ShieldCheck, AlertCircle, Wrench } from 'lucide-react';
+import FaqSection from '@/components/FaqSection';
 import { Info } from 'lucide-react';
 import PrijzenWidget from '@/components/PrijzenWidget';
 import { locaties } from '@/lib/locaties';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('Homepage');
+  const locale = useLocale();
   
   return (
     <>
@@ -44,11 +46,11 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:0651352095" className="btn-primary text-xl px-10 py-5">
-                <Phone className="w-6 h-6 mr-3" /> {t('btnCall')}
+              <a href="tel:0651352095" className="btn-primary text-lg md:text-xl px-8 py-4 whitespace-pre-wrap text-center leading-tight">
+                <Phone className="w-6 h-6 mr-3 shrink-0" /> {t('btnCall')}
               </a>
-              <Link href="/dagprijzen" className="inline-flex items-center justify-center text-xl px-10 py-5 rounded-md border-2 border-white text-white font-bold transition-all duration-300 hover:bg-white hover:text-rjmk-blue backdrop-blur-md hover:-translate-y-1">
-                {t('btnTrends')} <ArrowRight className="w-6 h-6 ml-3" />
+              <Link href="/diensten/container-plaatsing" className="inline-flex items-center justify-center text-lg md:text-xl px-8 py-4 rounded-md border-2 border-white text-white font-bold transition-all duration-300 hover:bg-white hover:text-rjmk-blue backdrop-blur-md hover:-translate-y-1 whitespace-pre-wrap text-center leading-tight">
+                {t('btnTrends')} <ArrowRight className="w-6 h-6 ml-3 shrink-0" />
               </Link>
             </div>
 
@@ -124,9 +126,9 @@ export default function Home() {
             </Link>
 
             {/* Card 4 */}
-            <Link href="/diensten/kabelverwerking" className="glass-card p-8 rounded-xl group relative overflow-hidden flex flex-col h-full">
+            <Link href="/diensten/bedrijfsontruiming" className="glass-card p-8 rounded-xl group relative overflow-hidden flex flex-col h-full">
               <div className="absolute top-0 right-0 w-32 h-32 bg-badge-green/10 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-150 duration-500"></div>
-              <Recycle className="w-12 h-12 text-badge-green mb-6 relative z-10" />
+              <Wrench className="w-12 h-12 text-badge-green mb-6 relative z-10" />
               <h3 className="text-xl font-display font-bold text-rjmk-dark mb-3 uppercase relative z-10">{t('service4Title')}</h3>
               <p className="text-slate-600 text-sm mb-6 flex-grow relative z-10">
                 {t('service4Desc')}
@@ -295,6 +297,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* SEO FAQ SECTION */}
+      <FaqSection locale={locale} />
     </>
   );
 }

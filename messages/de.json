@@ -16,9 +16,9 @@
     "heroSpecialist": "Spezialist in Venlo & Umgebung",
     "heroTitle1": "Alteisen",
     "heroTitle2": "Abholservice",
-    "heroDesc": "RJMK ist Ihr zuverlässiger Partner für Metallankauf, Kabelverarbeitung und kostenlose Containerbereitstellung. Wir bieten faire Markttrends, vollständige Transparenz und professionelle Abwicklung.",
-    "btnCall": "Sofort Anrufen",
-    "btnTrends": "Markttrends Ansehen",
+    "heroDesc": "RJMK ist Ihr zuverlässiger Partner in Venlo für den Ankauf von Alteisen und allen Arten von Metallen. Wir bieten einen schnellen Abholservice, faire Wiegepreise und kostenlose Containerbereitstellung für große Mengen.",
+    "btnCall": "Alteisen\nAbholservice",
+    "btnTrends": "Container\nBeantragen",
     "trust1": "Schnelle Abwicklung",
     "trust2": "Kostenloser Abholservice",
     "trust3": "Zertifiziert & Zuverlässig",
@@ -30,8 +30,8 @@
     "service2Desc": "Ankauf aller Arten von NE-Metallen wie Kupfer, Messing, Aluminium, Blei und Zink zu den besten Tagespreisen.",
     "service3Title": "Containerbereitstellung",
     "service3Desc": "Kostenlose Bereitstellung von Containern für Ihre Metallabfälle. Ideal für Baustellen, Abrissarbeiten und Industrieunternehmen.",
-    "service4Title": "Kabelverarbeitung",
-    "service4Desc": "Mit unserem eigenen professionellen Kabelzerkleinerer verarbeiten wir Kupfer- und Aluminiumkabel effizient und umweltfreundlich.",
+    "service4Title": "Demontage & Räumung",
+    "service4Desc": "Spezialisiert auf Firmenräumungen und die Demontage von schweren Regalen oder Maschinen. Wir nehmen Ihnen alle industriellen Metallabfälle und Demontagearbeiten sicher ab.",
     "readMore": "Mehr lesen",
     "pricesTitle": "Transparente ",
     "pricesTitleHighlight": "Tagespreise",
@@ -57,5 +57,29 @@
     "ctaTitle2": "Für Ihr Unternehmen?",
     "ctaDesc": "Haben Sie regelmäßig Metallabfall? Wir stellen kostenlos einen maßgeschneiderten Container auf. Voll? Ein Anruf und wir tauschen ihn innerhalb von 24 Stunden aus.",
     "btnCta": "Sofort Container Beantragen"
+  },
+  "NieuwsArticles": {
+    "circulaire-kracht-rood-koper": {
+      "title": "Die zirkuläre Kraft von Kupfer",
+      "category": "Markt-News",
+      "summary": "Erfahren Sie, wie Kupfer zu 100% verlustfrei recycelt und wiederverwendet wird.",
+      "content": "Kupfer gehört zu den wenigen Rohstoffen weltweit, die zu 100 % ohne Verlust von Materialeigenschaften oder Leitfähigkeit recycelt werden können. Diese Fähigkeit zum endlosen Recycling ist der Grund, warum rotes Kupfer an der London Metal Exchange (LME) einen extrem hohen Restwert darstellt.\n\nInternationalen Schätzungen zufolge sind heute noch bis zu 80 % des jemals geförderten Kupfers in Gebrauch. Aus Nachhaltigkeitsperspektive ist Kupferrecycling essenziell: Die Umwandlung von Altkupfer in neues Material erfordert etwa 85 % weniger Energie als der Abbau von Kupfererz.\n\nIn Regionen mit starker industrieller und logistischer Infrastruktur, wie Venlo, spielen spezialisierte Recyclingunternehmen eine unverzichtbare Rolle, indem sie Kupferreste aus Abbruch- und Installationsarbeiten effizient in die Lieferkette zurückführen. Dies verhilft lokalen Unternehmen nicht nur zu einer transparenten finanziellen Abwicklung, sondern reduziert auch direkt den globalen CO2-Fußabdruck."
+    },
+    "staal-meest-gerecyclede-materiaal": {
+      "title": "Stahl: Meistrecyceltes Material",
+      "category": "Nachhaltigkeit",
+      "summary": "Warum Stahlschrott weltweit das Rückgrat der Schwerindustrie bildet.",
+      "content": "Alteisen und Stahlschrott bilden weltweit das Rückgrat des Metallrecyclings. Stahl ist das am meisten recycelte Material der Welt, teils dank seiner magnetischen Eigenschaften, die eine maschinelle Trennung äußerst effizient machen.\n\nDie Verwendung von Stahlschrott in Hochöfen anstelle von Eisenerz und Kohle spart etwa 74 % der normalerweise benötigten Energie, was zu massiven Reduzierungen der CO2-Emissionen führt. Ein modernes Stahlwerk nutzt kontinuierlich Alteisen als Basisschicht für Neuproduktionen.\n\nBesonders bei Bau-, Abbruch- und Logistikmaschinenarbeiten rund um Venlo fallen gewaltige Mengen Schrott an. Zuverlässige Abholservices und streng koordinierte Containerbereitstellungen sorgen dafür, dass dieser „Sekundärstahl“ in kürzester Zeit zerkleinert, geschert und in Gießereien transportiert wird. Ein Kreislauf, der rein auf sachlicher Effizienz beruht."
+    },
+    "loodaccus-slagingspercentage": {
+      "title": "Bleibatterien: 99% Erfolgsquote",
+      "category": "Industrie & Umwelt",
+      "summary": "Die beispiellose Erfolgsgeschichte des sicheren Recyclings von giftigen Bleibatterien.",
+      "content": "Obwohl Blei-Säure-Batterien aufgrund des giftigen Bleis und der Batteriesäure als gefährlicher Abfall (Sondermüll) eingestuft werden, stellen sie paradoxerweise eine der größten Erfolgsgeschichten in der Recyclingbranche dar. In Europa werden mittlerweile fast 99 % der ausrangierten Bleibatterien erfolgreich recycelt.\n\nWährend der mechanischen Verarbeitung werden die Batterien in Becken zerkleinert. Die schwereren Bleibestandteile sinken auf den Boden, während das Kunststoffgehäuse (meist Polypropylen) an die Oberfläche schwimmt. Die Schwefelsäure wird gleichzeitig sicher abgelassen und chemisch zu harmlosem Reststoff und Wasser neutralisiert.\n\nSowohl das recycelte Blei als auch das Kunststoffgehäuse werden zu primären Rohstoffen für die Produktion brandneuer Batterien. Da strenge Umweltgesetze ihre Annahme und Verarbeitung regeln, ist die Zusammenarbeit mit zertifizierten Sammelstellen im Großraum Venlo, die sich strikt an sichere Entsorgungsprotokolle halten, von entscheidender Bedeutung."
+    }
+  },
+  "NieuwsUI": {
+    "readMore": "Artikel lesen",
+    "backToNews": "Zurück zu den News"
   }
 }
