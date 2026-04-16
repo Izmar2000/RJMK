@@ -265,7 +265,6 @@ export default function Home() {
               <div className="space-y-4 text-slate-600 text-lg leading-relaxed">
                 <p>{t('aboutP1')}</p>
                 <p>{t('aboutP2')}</p>
-                <p>{t('aboutP3')}</p>
                 <p>{t('aboutP4')}</p>
               </div>
               <div className="pt-6">
